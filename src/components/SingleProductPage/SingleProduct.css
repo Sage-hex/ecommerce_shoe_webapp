@@ -1,16 +1,28 @@
 .mainContainer {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+  }
+  .mainContainer-inner {
+    width: 80%;
+    height: max-content;
+    display: flex;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     margin: 20px;
-    background-color: green;
-    margin-top: 40rem;
+    /* background-color: green; */
   }
-  
+
+  /* .imageContainer {
+    width: 100%;
+  } */
   .imageContainer img {
     max-width: 100%;
+    height: max-content;
     border-radius: 8px;
   }
   
@@ -20,8 +32,13 @@
   
   .details h3, .details h2 {
     margin: 0;
+
   }
-  
+  .details p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(85, 84, 84);
+  }
   .price {
     margin-top: 20px;
   }
@@ -33,7 +50,8 @@
   
   .discount h3 {
     margin-right: 10px;
-    color: #e60000;
+    color: #e65c00;
+
   }
   
   .discount h4 {

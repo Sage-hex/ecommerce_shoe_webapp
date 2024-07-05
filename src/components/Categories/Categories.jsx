@@ -1,21 +1,38 @@
-import './Categories.css'
+import React, { useState } from 'react';
+import './Categories.css';
 
-const Categories = () => {
+const Categories = ({ onSelectCategory }) => {
+  const [activeCategory, setActiveCategory] = useState('all');
 
-	return (
+  const handleCategoryClick = (category) => {
+    setActiveCategory(category);
+    onSelectCategory(category);
+  };
 
-		<div className='btnContainer'>
+  return (
+    <div className="btnContainer">
+      <div className="btnWrapper">
+        <h3
+          className={activeCategory === 'all' ? 'active' : ''}
+          onClick={() => handleCategoryClick('all')}
+        >
+          All Products
+        </h3>
+        <h3
+          className={activeCategory === 'lowCost' ? 'active' : ''}
+          onClick={() => handleCategoryClick('lowCost')}
+        >
+          Low Cost
+        </h3>
+        <h3
+          className={activeCategory === 'highCost' ? 'active' : ''}
+          onClick={() => handleCategoryClick('highCost')}
+        >
+          High Cost
+        </h3>
+      </div>
+    </div>
+  );
+};
 
-		<div className="btnWrapper">
-			<h3>All Product</h3>
-			<h3>High Price</h3>
-			<h3>Low Price</h3>
-		</div>
-			
-
-		</div>
-
-		)
-}
-
-export default Categories
+export default Categories;

@@ -1,0 +1,94 @@
+.all-products-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+  justify-content: center;
+/*  background-color: red;*/
+
+}
+
+.product-card {
+  width: 20%;
+  height: 70%;
+  background-color: #fff;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.747);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.detail-container {
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.detail-items {
+  width: 100%;
+  height: 70%;
+  padding: 0px;
+}
+
+.detail-container h2 {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.detail-container h3 {
+  color: orangered;
+
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rating-value {
+  color: black;
+  font-weight: 600;
+}
+
+.cart-details {
+  position: absolute;
+  top: 10px; /* Adjust top position for spacing */
+  right: 10px; /* Adjust right position for spacing */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust gap between icons */
+}
+
+.delete-icon {
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+.add-icon {
+  font-size: 20px;
+  color: green;
+  cursor: pointer;
+}
